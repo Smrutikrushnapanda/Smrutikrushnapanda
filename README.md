@@ -1,7 +1,15 @@
-num = int(input("Enter a number: "))
-mod = num % 2
-if mod > 0:
-    print("This is an odd number.")
+n = 5
+
+# Check if the number is greater than 1
+
+if n > 1:
+	for i in range(2, int(n/2)+1):
+		if (n % i) == 0:
+			print(num, "is not a prime number")
+		break
+	else:
+		print(n, "is a prime number")
+# If the number is less than 1, its also not a prime number.
 else:
-    print("This is an even number."
+	print(n, "is not a prime number")
 
